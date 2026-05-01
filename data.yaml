@@ -1,0 +1,12 @@
+path: dataset_yolo
+
+train: images/train
+val: images/val
+
+names:
+  0: 0_fingers
+  1: 1_fingers
+  2: 2_fingers
+  3: 3_fingers
+  4: 4_fingers
+  5: 5_fingers
