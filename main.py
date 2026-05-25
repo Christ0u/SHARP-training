@@ -7,8 +7,8 @@ def main():
 
     model.train(
         data=r'data.yaml',
-        epochs=250,
-        imgsz=960,
+        epochs=5,
+        imgsz=640,
         batch=8,
         device=0,
         workers=2,
@@ -23,10 +23,10 @@ def main():
         # ---- DATA AUGMENTATION ----
         fliplr=0.25,
         flipud=0.1,
-        hsv_h=0.015,
-        hsv_s=0.35,
-        hsv_v=0.2,
-        mosaic=0.0,
+        hsv_h=0,
+        hsv_s=0,
+        hsv_v=0,
+        mosaic=1.0,
         auto_augment="randaugment",
         seed=seed,
         project=r'runs'
